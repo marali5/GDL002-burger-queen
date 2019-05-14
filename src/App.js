@@ -1,17 +1,12 @@
 import React from 'react';
 import'./css/style.css';
+import Navbar from './components/navbar';
+import Home from './components/home';
 function App() {
   return (
     <div className="App">
-      <nav>
-        <h2 class="logo"><a class="logo-link" href="#">Oscars 2019</a></h2>
-        <ul class="nav-menu">
-          <li><a class="nav-menu__link" href="#">Home</a></li>
-          <li><a class="nav-menu__link" href="#">Best Actors</a></li>
-          <li><a class="nav-menu__link" href="#">Best Actress</a></li>
-          <li><a class="nav-menu__link" href="#">Best Films</a></li>
-        </ul>
-      </nav>
+     <Navbar title="The oscar 2019"/>
+     <Home title="Oscar Winers"/>
     </div>
   );
 }
