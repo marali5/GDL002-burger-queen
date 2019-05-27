@@ -6,7 +6,7 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: lightblue;
+	background-image: url('https://chainimage.com/images/wood-background-1600x1200-6-hebus-org-high-definition-wallpapers.jpg')
 }
 
 code {
@@ -14,17 +14,13 @@ code {
     monospace;
 }
 
-.App{
-    background-color: #fff;
-    max-width: 992px;
-margin: auto;
-}
+
 
 nav {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid grey;
-    background-color: orange;
+    background-color:#343a40;
     padding: 10px 20px;
 }
 
@@ -34,13 +30,16 @@ nav {
 }
 
 .nav-menu__link {
-    display: inline-block;
+display: inline-block;
 margin: 5px;
-border: 1px solid grey;
 text-decoration: none;
-border-radius: 5px;
 padding: 3px 8px;
-background-color: #fff;
+
+}
+
+.nav-menu__link.active{
+    background-color:royalblue;
+    color:#fff;
 }
 
 .nav-menu__link:hover {
@@ -51,14 +50,81 @@ background-color: #fff;
 }
 
 .logo-link {
-    color: #fff;
-    text-decoration: none;
+    background-image: url('../img/logo.png');
+    width:200px;
+	height:200px;
+}
+
+.main-content {
+width:90%;
+margin-top: -2%;
+padding-bottom: 50px;
+background-image:linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url('https://image.freepik.com/free-photo/fast-food-space-bottom_23-2147695664.jpg')
+
+}
+
+
+
+.main-content h2 {
+	text-align: center;
+	margin-bottom:20px;
+
 }
 
 .home-image{
     width: 100%;
     height: 500px;
+    background-size: cover;
+    margin-bottom: 50px;
     
+}
+
+
+.thumbnail-container {
+display:flex;
+justify-content:space-around;
+margin-bottom:50px;
+width:100%;
+padding-top:25%; 
+}
+.home-thumbnail-1,
+.home-thumbnail-2,
+.home-thumbnail-3{
+	background-size:cover;
+	width:200px;
+    height:200px;
+  
+}
+
+
+
+.home-thumbnail-1{
+    background-image:url('../img/menu.png');
+    
+}
+.home-thumbnail-2{
+	background-image:url('../img/cocina.png');
+}
+
+.home-thumbnail-3{
+	background-image:url('../img/gestion.png');
+}
+
+.home-thumbnail-1:hover,
+.home-thumbnail-2:hover,
+.home-thumbnail-3:hover{
+cursor: pointer;
+transform:scale(1.25);
+}
+/*diseño de pag. actress*/
+
+.actress-image{
+    width: 100%;
+    height: 500px;
+    background-image: url('https://image.freepik.com/free-photo/various-vegetables-black-table-with-space-message_1220-614.jpg');
     background-size: cover;
     margin-bottom: 50px;
     transition: all 0.3s ease-in-out;

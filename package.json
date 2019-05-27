@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "firebase": "^6.0.2",
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1"
   },
   "scripts": {
@@ -31,5 +33,5 @@
       "last 1 safari version"
     ]
   },
-"homepage": "https://marali5.github.io/GDL002-burger-queen"
+  "homepage": "https://marali5.github.io/GDL002-burger-queen"
 }
