@@ -9,7 +9,7 @@ export default class Todos extends Component{
     }
     componentDidMount(){
          let db = firebase.firestore();
-        db.collection('todos').get().then((snapShots)=>{
+        db.collection('todos').onSnapshot((snapShots)=>{
             this.setState({
                 items:snapShots.docs.map(doc=>{
                     return{id:doc.id,data:doc.data()}
@@ -20,6 +20,11 @@ export default class Todos extends Component{
         
     }, error=>{console.error();
     });
+};
+
+deleteItem=(id)=>{
+    let db = firebase.firestore();
+    db.collection("todos").doc(id).delete();
 }
     
     render(){
@@ -39,9 +44,9 @@ export default class Todos extends Component{
       {items &&items!==undefined ? items.map((item,key)=>(
 <tr key={key}>
     
+    <td>{item.data.name}</td>
     <td>{item.data.item}</td>
-    <td>{item.data.item}</td>
-    <td><button>Eliminar</button></td>
+    <td><button onClick={()=>this.deleteItem(item.id)}>Eliminar</button></td>
 </tr>
       )):null}
   </tbody>
