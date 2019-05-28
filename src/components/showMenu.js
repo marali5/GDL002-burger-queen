@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import MenuData from './menu.json';
 import Comanda from '../components/orden';
-
+import Input from '../components/inputName'
 
 
 class MenuList extends Component{
@@ -24,7 +24,9 @@ class MenuList extends Component{
 	 this.setState({
 		 orders:[...this.state.orders,order]
 	 });
+	 
 	};	
+
 
 	sumaTotal (){
 		const priceArr=this.state.orders.map((el)=> el.price)
@@ -42,15 +44,17 @@ class MenuList extends Component{
 	//	console.log(this.state.orders)
 		return (
 			<div className="container">
+				<div className="inputName"><Input/></div>
 				<div className= "row">
-					<div className= "col">
-					<div className="col">Name<input id="nombre"></input></div>
-						<div className="list-group col-md-12">{MenuData.map((MenuDetail,index)=>
-									<button onClick={() => {this.submit(MenuDetail)}}>
+					<div className= "col menuCol"> 
+						<div className=" col-md-12 btnCont">{MenuData.map((MenuDetail,index)=>
+									<button className="btnMenu" onClick={() => {this.submit(MenuDetail)}}>
 										<div key={index}>
+										<div className="titleCard">
+											<img className="imageCard" src={MenuDetail.Image}></img>
 											<h3 className="card-title">{MenuDetail.Name}</h3>
-											<p className="card-info card-overdue">{MenuDetail.Sabores}</p>
-											<h4 className="card-price right">{MenuDetail.Price}</h4>
+											<h4 className="card-price right">${MenuDetail.Price}</h4>
+											</div>
 										</div>
 									</button>
 									
@@ -60,7 +64,7 @@ class MenuList extends Component{
 					
 						</div>
 					</div>
-					<div className="col">
+					<div className="col ordenCol">
 	
 					<Comanda orden={this.state.orders}/>
 					

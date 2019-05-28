@@ -7,9 +7,10 @@ class Comanda extends React.Component{
             return(
                 <div>
                     <ul key={i} className="list-group col-md-12">
-                        <li className="list-group-item d-flex justify-content-between align-items-center col-md-6">
+                        <li className=" d-flex justify-content-between align-items-center col-md-12">
                             <p>{menu.item}</p>
                             <span className="btn-success">{"$"+ menu.price}</span>
+                            <div></div>
                         </li>
                     </ul>
                 </div>

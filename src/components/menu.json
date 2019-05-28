@@ -1,75 +1,62 @@
 [
     {
         "Name": "Café americano",
-        
-        "Sabores": null,
         "Price": 5,
-        "Image": ""
+        "Image": "https://cubanbakeryuc.com/wp-content/uploads/2018/05/Cafe%CC%81-Americano-600x600.jpeg"
     },
     {
         "Name": "Café con leche",
-        "Sabores": null,
         "Price": 7,
-        "Image": ""
+        "Image": "http://belkysinternationalcuisine.com/wp-content/uploads/2018/07/cafe-con-leche-latte-coffee-sml-600x600.jpg"
     },
     {
-        "Name": "Sandwich de jamón y queso",
-        "Sabores": null,
+        "Name": "Sandwich Jamon/queso",
         "Price": 10,
-        "Image": ""
+        "Image": "https://www.ahealthierupstate.org/wp-content/uploads/2017/05/chicken-avocado-sandwich-600x600.jpg"
     },
     {
-        "Name": "Jugo de frutas natural",
-        "Sabores" : ["Naranja", "Zanahoria"],
+        "Name": "Jugo de naranja",
         "Price": 7,
-        "Image": ""
+        "Image": "https://cdn.shopify.com/s/files/1/2378/7601/products/naranjas_de_zumo_grande.png?v=1508753270"
     },
     {
         "Name": "Hamburguesa simple",
-        "Sabores": ["Res", "Pollo", "Vegetariana"],
         "Price": 10,
-        "Image": ""
+        "Image": "https://www.takeawaylanzarote.com/eShop/346-home_default/hamburguesa-simple-takeaway-lanzarote.jpg"
     },
     {
         "Name": "Hamburguesa doble",
-        "Sabores": ["Res", "Pollo", "Vegetariana"],
         "Price": 15,
-        "Image": ""
+        "Image": "https://d1jgln4w9al398.cloudfront.net/imagens/ce/pratos/1d541f75-b4df-4556-970e-0a0253d1c433/201803011517_87.png"
     },
     {
         "Name": "Papas fritas",
-        "Sabores": null,
         "Price": 5,
-        "Image": ""
+        "Image": "https://live.staticflickr.com/5749/21768240795_091b40d33b_b.jpg"
     },
     {
         "Name": "Aros de cebolla",
-        "Sabores": null,
         "Price": 5,
-        "Image": ""
+        "Image": "https://cmslogistics.es/179-large_default/aros-de-cebolla-onion-rings.jpg"
     },
     {
         "Name": "Agua 500ml",
-        "Sabores": null,
         "Price": 5,
-        "Image": ""
+        "Image": "https://super.walmart.com.mx/images/product-images/img_large/00750179164998L.jpg"
     },
     {
         "Name": "Agua 750ml",
-        "Sabores": null,
         "Price": 7,
-        "Image": ""
+        "Image": "https://www.superama.com.mx/Content/images/products/img_large/0075810400034L.jpg"
     },
     {
         "Name": "Gaseosa 500ml",
-        "Sabores": null,
         "Price": 7,
-        "Image": ""
+        "Image": "https://www.ilovebiosupermercadoecologico.com/1073-large_default/refresco-naranja-500ml.jpg"
     },
     {
         "Name": "Gaseosa 750ml",
-        "Sabores": null,
         "Price": 10,
-        "Image": ""
+        "Image": "https://www.superama.com.mx/Content/images/products/img_large/0750103132255L.jpg"
     }
 ]

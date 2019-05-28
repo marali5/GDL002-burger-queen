@@ -1,5 +1,5 @@
 import React from 'react';
-import MenuList from '../components/showMenu';
+import MenuList from './showMenu';
 
 
 
